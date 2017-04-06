@@ -550,7 +550,7 @@ background-size: 31px, 31px;}
 
 #slideshow-wrap input[type=radio]#button-1~label[for=button-1] { background-image: url(imagens/video/1normal.png); background-size: 100% }
 
-#slideshow-wrap input[type=radio]#button-1:checked~label[for=button-1] { background-image: url(imagens/video/1); background-size: 100% }
+#slideshow-wrap input[type=radio]#button-1:checked~label[for=button-1] { background-image: url(imagens/video/1.png); background-size: 100% }
 
 #slideshow-wrap input[type=radio]#button-2~label[for=button-2] { background-image: url(imagens/video/4normal.png); background-size: 100% }
 
