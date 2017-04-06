@@ -10,6 +10,7 @@ img, fieldset {
 border: 0;
 }
 /* set image max width to 100% */
+
 img {
 max-width: 100%;
 height: auto;
@@ -725,7 +726,7 @@ background-size: 120%;
 
 #slideshow-wrap-mobile input[type=radio]#button-1-mobile~label[for=button-1-mobile] { background-image: url(imagens/video/1normal.png); background-size: 100% }
 
-#slideshow-wrap-mobile input[type=radio]#button-1-mobile:checked~label[for=button-1-mobile] { background-image: url(imagens/video/1); background-size: 100% }
+#slideshow-wrap-mobile input[type=radio]#button-1-mobile:checked~label[for=button-1-mobile] { background-image: url(imagens/video/1.png); background-size: 100% }
 
 #slideshow-wrap-mobile input[type=radio]#button-2-mobile~label[for=button-2-mobile] { background-image: url(imagens/video/4normal.png); background-size: 100% }
 
