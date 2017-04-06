@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>The Hitchhiker's Guide to the Galaxy</title>
+ <link rel="stylesheet" href="trillian.css">
+ <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+ <script src="jquery/jquery-1.10.2.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui"> 
+</head>
+<body>
+    <div id="wrapper">
+    
+   <div id="caixa">
+    <ul class="img-list">
+  <li class="trillian">
+    <a href="#">
+      <img src="imagens/characters/trillian.png" width="470" height="540" />
+      <span class="text-content"><span>
+          <p class="title">Tricia McMillan</p>
+          <br></br>
+          <p class="text">Tricia McMillan is a brilliant mathematician and astrophysicist whom Arthur Dent talked to at a party in Islington. She leaves the Earth with Zaphod Beeblebrox and travels with him on the spaceship Heart of Gold, where she and Arthur next meet, shortly after the Earth has been destroyed to make way for a hyperspace bypass. She later changes her name to Trillian, because she feels it is more ‘space-y’.
+</p>
+          </span></span>
+    </a>
+  </li>
+    
+    <li class="zooey">
+    <a href="#">
+      <img src="imagens/characters/zooey.png" width="470" height="540" />
+      <span class="text-content"><span>
+          <p class="title">Zooey Deschanel</p>
+          <br></br>
+          <p class="text">Zooey Deschanel was born in California in 1980 and is famous for her musical career, as well as her acting roles. These include participations in movies such as Almost Famous, Elf, Yes Man, Bridge to Terabithia, and (500) Days of Summer, in which she plays the main female character. She is also well known for her role as Jessica Day on the award-winning TV show New Girl.</p>
+          </span></span>
+    </a>
+  </li>
+</ul>
+    
+    
+
+    </div>
+	
+<div id="caixa-mobile">
+    <div id="trillian-mobile"></div>
+<div id="text-mobile">  
+     Tricia McMillan<br></br>
+    Tricia McMillan is a brilliant mathematician and astrophysicist whom Arthur Dent talked to at a party in Islington. She leaves the Earth with Zaphod Beeblebrox and travels with him on the spaceship Heart of Gold, where she and Arthur next meet, shortly after the Earth has been destroyed to make way for a hyperspace bypass. She later changes her name to Trillian, because she feels it is more ‘space-y’.
+    </div>
+
+<div id="zooey-mobile">´</div>
+	
+ <div id="text-mobile-2">  
+     Zooey Deschanel<br></br>
+    Zooey Deschanel was born in California in 1980 and is famous for her musical career, as well as her acting roles. These include participations in movies such as Almost Famous, Elf, Yes Man, Bridge to Terabithia, and (500) Days of Summer, in which she plays the main female character. She is also well known for her role as Jessica Day on the award-winning TV show New Girl.
+    </div>
+
+
+</div>
+
+
+
+<a href="ford.html" class="nav-direita">
+    <img src="imagens/characters/nav-direita-01.svg"/>
+</a>    
+
+<a href="arthur.html" class="nav-esquerda">
+    <img src="imagens/characters/nav-esquerda-01.svg"/>
+</a>  
+    
+<a href="trillian.html" class="location"></a>
+    
+    
+ <div id="links" class="links">
+ <a href="http://www.amazon.com/Hitchhikers-Guide-Galaxy-Sam-Rockwell/dp/B003QSJVGW/ref=tmm_aiv_swatch_0?_encoding=UTF8&sr=&qid=" title="Amazon Prime" id="amazon" class="amazon" target="_blank">
+</a>
+
+<a href="http://dvd.netflix.com/Movie/The-Hitchhiker-s-Guide-to-the-Galaxy/70021632" title="Netflix" id="netflix" class="netflix" target="_blank">
+</a>
+
+<a href="http://itunes.apple.com/us/movie/hitchhikers-guide-to-the-galaxy/id188702833" title="iTunes" id="itunes" class="itunes" target="_blank">
+</a>
+    
+    </div>
+
+ <a href="ford.html">
+    <div id="nav-direita-mobile"></div>
+</a>    
+
+
+    
+    <div id="menu"><ul class="menu">
+        
+   <li title="menu"> 
+       <a href="#" class="menu-button home"></a>
+        </li>
+        
+ <li title="about">
+     <a href="#" class="menu-button about"></a>
+        </li>
+        
+ <li title="characters">
+     <a href="#" class="menu-button characters"></a>
+        </li>
+        
+ <li title="gallery">
+     <a href="#" class="menu-button gallery"></a>
+        </li>
+        
+ <li title="video">
+     <a href="#" class="menu-button video"></a>
+        </li>
+        
+ <li title="trivia">
+     <a href="#" class="menu-button trivia"></a>
+        </li>
+		
+		<li title="mobile">
+     <a href="#" class="menu-button mobile"></a>
+        </li>
+ </ul>
+ <ul class="menu-bar">
+ <li><a href="index.html" class="menu-button home" ></a></li>
+ <li><a href="about.html" class="menu-button about"></a></li>
+ <li><a href="arthur.html" class="menu-button characters"></a></li>
+ <li><a href="gallery.html" class="menu-button gallery"></a></li>
+ <li><a href="video.html" class="menu-button video"></a></li> 
+ <li><a href="trivia.html" class="menu-button trivia"></a></li>
+ <li><a href="#" class="menu-button mobile"></a></li>
+ </ul>
+       
+    </div>
+    
+
+    </div>
+    
+
+<div id="warning-message">
+   
+</div>
+    
+</body>
+ 
+  <script type="text/javascript">
+    $(document).ready(function()
+{
+    $(document).mouseup(function(e)
+    {
+        var subject = $("#menu"); 
+
+        if(e.target.id == subject.attr('id'))
+        {
+            $(".menu").toggleClass( "hide" );
+            $(".menu-bar").toggleClass( "open" );
+        }
+    });
+});
+    $(document).ready(function(){
+  $(".menu-button").click(function(){
+   $(".menu-bar").toggleClass( "open" );
+      $(".menu").toggleClass( "hide" );
+      
+    
+      
+  });
+ });
+      
+      $(document).ready(function(){
+    $("#text-mobile").hide();
+    $("#zooey-mobile").hide();
+    $("#text-mobile-2").hide();
+        
+    $("#trillian-mobile").on("click",function(){
+        $("#text-mobile").fadeIn(1500);
+        $("#trillian-mobile").hide();
+    });
+    $("#text-mobile").on("click",function(){
+        $("#zooey-mobile").fadeIn(1500);
+        $("#text-mobile").hide();
+    });
+     $("#zooey-mobile").on("click",function(){
+        $("#text-mobile-2").fadeIn(1500);
+        $("#zooey-mobile").hide();
+    });
+     $("#text-mobile-2").on("click",function(){
+        $("#trillian-mobile").fadeIn(1500);
+        $("#text-mobile-2").hide();
+    });
+});
+      
+      </script>  
+  
+</html>

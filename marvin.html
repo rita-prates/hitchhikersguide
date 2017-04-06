@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>The Hitchhiker's Guide to the Galaxy</title>
+ <link rel="stylesheet" href="marvin.css">
+ <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+ <script src="jquery/jquery-1.10.2.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui"> 
+</head>
+<body>
+    
+    <div id="wrapper">
+    
+   <div id="caixa">
+    <ul class="img-list">
+  <li class="marvin">
+    <a href="#">
+      <img src="imagens/characters/marvin.png" width="470" height="540" />
+      <span class="text-content"><span>
+          <p class="title">Marvin the Paranoid Android</p>
+          <br></br>
+          <p class="text">Marvin the Paranoid Android is exactly that. He’s constantly depressed, as a result of being a prototype robot with GPP (Genuine People Personality). His brain is the size of a planet, which only makes him more bored and consequently depressed. He serves as help to Trillian and Zaphod and eventually meets Arthur and Ford on the spaceship Heart of Gold, accompanying them in their adventure. 
+</p>
+          </span></span>
+    </a>
+  </li>
+    
+    <li class="alan">
+    <a href="#">
+      <img src="imagens/characters/alan.png" width="470" height="540" />
+      <span class="text-content"><span>
+          <p class="title">Alan Rickman</p>
+          <br></br>
+          <p class="text">Alan Rickman is an English actor born in 1946. He has participated in numerous theatre productions, but is most famous for his portrayal of Severus Snape in the Harry Potter series, as well as his roles in films such as Robin Hood: Prince of Thieves, Die Hard, Dogma, Love Actually, Sweeney Todd: The Demon Barber of Fleet Street, Tim Burton’s Alice in Wonderland and The Butler.</p>
+          </span></span>
+    </a>
+  </li>
+</ul>
+    
+    
+    </div>
+
+<div id="caixa-mobile">
+    <div id="marvin-mobile"></div>
+<div id="text-mobile">  
+     Marvin the Paranoid Android<br></br>
+    Marvin the Paranoid Android is exactly that. He’s constantly depressed, as a result of being a prototype robot with GPP (Genuine People Personality). His brain is the size of a planet, which only makes him more bored and consequently depressed. He serves as help to Trillian and Zaphod and eventually meets Arthur and Ford on the spaceship Heart of Gold, accompanying them in their adventure. 
+    </div>
+
+<div id="alan-mobile">´</div>
+	
+ <div id="text-mobile-2">  
+     Alan Rickman<br></br>
+    Alan Rickman is an English actor born in 1946. He has participated in numerous theatre productions, but is most famous for his portrayal of Severus Snape in the Harry Potter series, as well as his roles in films such as Robin Hood: Prince of Thieves, Die Hard, Dogma, Love Actually, Sweeney Todd: The Demon Barber of Fleet Street, Tim Burton’s Alice in Wonderland and The Butler.
+    </div>
+
+
+</div>
+
+
+
+<a href="guide.html" class="nav-direita">
+    <img src="imagens/characters/nav-direita-01.svg"/>
+</a>    
+
+<a href="zaphod.html" class="nav-esquerda">
+    <img src="imagens/characters/nav-esquerda-01.svg"/>
+</a>  
+    
+<a href="marvin.html" class="location"></a>
+    
+    
+ <div id="links" class="links">
+ <a href="http://www.amazon.com/Hitchhikers-Guide-Galaxy-Sam-Rockwell/dp/B003QSJVGW/ref=tmm_aiv_swatch_0?_encoding=UTF8&sr=&qid=" title="Amazon Prime" id="amazon" class="amazon" target="_blank">
+</a>
+
+<a href="http://dvd.netflix.com/Movie/The-Hitchhiker-s-Guide-to-the-Galaxy/70021632" title="Netflix" id="netflix" class="netflix" target="_blank">
+</a>
+
+<a href="http://itunes.apple.com/us/movie/hitchhikers-guide-to-the-galaxy/id188702833" title="iTunes" id="itunes" class="itunes" target="_blank">
+</a>
+    
+    </div>
+    
+ <a href="guide.html">
+    <div id="nav-direita-mobile"></div>
+</a>    
+
+
+
+    <div id="menu"><ul class="menu">
+        
+   <li title="menu"> 
+       <a href="#" class="menu-button home"></a>
+        </li>
+        
+ <li title="about">
+     <a href="#" class="menu-button about"></a>
+        </li>
+        
+ <li title="characters">
+     <a href="#" class="menu-button characters"></a>
+        </li>
+        
+ <li title="gallery">
+     <a href="#" class="menu-button gallery"></a>
+        </li>
+        
+ <li title="video">
+     <a href="#" class="menu-button video"></a>
+        </li>
+        
+ <li title="trivia">
+     <a href="#" class="menu-button trivia"></a>
+        </li>
+        
+        <li title="mobile">
+     <a href="#" class="menu-button mobile"></a>
+        </li>
+ </ul>
+ <ul class="menu-bar">
+ <li><a href="index.html" class="menu-button home" ></a></li>
+ <li><a href="about.html" class="menu-button about"></a></li>
+ <li><a href="arthur.html" class="menu-button characters"></a></li>
+ <li><a href="gallery.html" class="menu-button gallery"></a></li>
+ <li><a href="video.html" class="menu-button video"></a></li> 
+ <li><a href="trivia.html" class="menu-button trivia"></a></li>
+     
+     <li><a href="#" class="menu-button mobile"></a></li>
+ </ul>
+       
+    </div>
+    
+    </div>
+    
+
+<div id="warning-message">
+   
+</div>
+    
+</body>
+ 
+   <script type="text/javascript">
+    $(document).ready(function()
+{
+    $(document).mouseup(function(e)
+    {
+        var subject = $("#menu"); 
+
+        if(e.target.id == subject.attr('id'))
+        {
+            $(".menu").toggleClass( "hide" );
+            $(".menu-bar").toggleClass( "open" );
+        }
+    });
+});
+    $(document).ready(function(){
+  $(".menu-button").click(function(){
+   $(".menu-bar").toggleClass( "open" );
+      $(".menu").toggleClass( "hide" );
+      
+    
+      
+  });
+ });
+      
+      $(document).ready(function(){
+    $("#text-mobile").hide();
+    $("#alan-mobile").hide();
+    $("#text-mobile-2").hide();
+        
+    $("#marvin-mobile").on("click",function(){
+        $("#text-mobile").fadeIn(1500);
+        $("#marvin-mobile").hide();
+    });
+    $("#text-mobile").on("click",function(){
+        $("#alan-mobile").fadeIn(1500);
+        $("#text-mobile").hide();
+    });
+     $("#alan-mobile").on("click",function(){
+        $("#text-mobile-2").fadeIn(1500);
+        $("#alan-mobile").hide();
+    });
+     $("#text-mobile-2").on("click",function(){
+        $("#marvin-mobile").fadeIn(1500);
+        $("#text-mobile-2").hide();
+    });
+});
+      
+      </script>  
+  
+</html>
