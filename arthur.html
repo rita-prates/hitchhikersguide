@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>The Hitchhiker's Guide to the Galaxy</title>
+ <link rel="stylesheet" href="arthur.css">
+ <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+ <script src="jquery/jquery-1.10.2.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui"> 
+</head>
+<body>
+    
+     <div id="wrapper">
+   <div id="caixa">
+    <ul class="img-list">
+  <li class="arthur">
+    <a href="#">
+      <img src="imagens/characters/arthur.png" width="470" height="540" />
+      <span class="text-content"><span>
+          <p class="title">Arthur Dent</p>
+          <br></br>
+          <p class="text">Englishman Arthur Dent wakes up one morning to discover that his house is about to be bulldozed by the local council in order to build a bypass. His problems rapidly increase, however, when he discovers that the entire Earth is about to be demolished by aliens called Vogons, ostensibly to make way for a hyperspatial express route. With the help of friend Ford Prefect, Arthur escapes the Earth at the last minute and embarks on a journey through the Galaxy.</p>
+          </span></span>
+    </a>
+  </li>
+    
+    <li class="martin">
+    <a href="#">
+      <img src="imagens/characters/martin.png" width="470" height="540" />
+      <span class="text-content"><span>
+          <p class="title">Martin Freeman</p>
+          <br></br>
+          <p class="text">Born in England in 1979, Martin Freeman has starred in numerous TV Shows, such as The Office, Sherlock and Fargo. His notable film roles include The Hobbit trilogy, in which he plays the main character Bilbo Baggins, Love Actually, Nativity!, and the Three Flavours Cornetto trilogy, most prominently in The World’s End.
+Among other accolades, he has won an Emmy Award, BAFTA Award and an Empire Award, with other nominations including two other Emmy Awards, two other BAFTA Awards and a Saturn Award.</p>
+          </span></span>
+    </a>
+  </li>
+</ul>
+    
+    
+    </div>
+	
+	<div id="caixa-mobile">
+	
+	<div id="arthur-mobile">´</div>
+        
+        <div id="text-mobile">  
+     Arthur Dent<br></br>Englishman Arthur Dent wakes up one morning to discover that his house is about to be bulldozed by the local council in order to build a bypass. His problems rapidly increase, however, when he discovers that the entire Earth is about to be demolished by aliens called Vogons, ostensibly to make way for a hyperspatial express route. With the help of friend Ford Prefect, Arthur escapes the Earth at the last minute and embarks on a journey through the Galaxy.
+    </div>
+
+<div id="martin-mobile">´</div>
+	
+ <div id="text-mobile-2">  
+     Martin Freeman<br></br>
+    Born in England in 1979, Martin Freeman has starred in numerous TV Shows, such as The Office, Sherlock and Fargo. His notable film roles include The Hobbit trilogy, in which he plays the main character Bilbo Baggins, Love Actually, Nativity!, and the Three Flavours Cornetto trilogy, most prominently in The World’s End.
+Among other accolades, he has won an Emmy Award, BAFTA Award and an Empire Award, with other nominations including two other Emmy Awards, two other BAFTA Awards and a Saturn Award.
+    </div>
+	</div>
+
+<a href="trillian.html" class="nav-direita">
+    <img src="imagens/characters/nav-direita-01.svg"/>
+</a>    
+
+<a href="guide.html" class="nav-esquerda">
+    <img src="imagens/characters/nav-esquerda-01.svg"/>
+</a>  
+    
+<a href="arthur.html" class="location"></a>
+    
+    
+ <div id="links" class="links">
+ <a href="http://www.amazon.com/Hitchhikers-Guide-Galaxy-Sam-Rockwell/dp/B003QSJVGW/ref=tmm_aiv_swatch_0?_encoding=UTF8&sr=&qid=" title="Amazon Prime" id="amazon" class="amazon" target="_blank">
+</a>
+
+<a href="http://dvd.netflix.com/Movie/The-Hitchhiker-s-Guide-to-the-Galaxy/70021632" title="Netflix" id="netflix" class="netflix" target="_blank">
+</a>
+
+<a href="http://itunes.apple.com/us/movie/hitchhikers-guide-to-the-galaxy/id188702833" title="iTunes" id="itunes" class="itunes" target="_blank">
+</a>
+    
+  
+     
+     
+    </div>
+
+    <a href="trillian.html">
+    <div id="nav-direita-mobile"></div>
+</a>    
+
+ 
+
+    <div id="menu"><ul class="menu">
+        
+   <li title="menu"> 
+       <a href="#" class="menu-button home"></a>
+        </li>
+        
+ <li title="about">
+     <a href="#" class="menu-button about"></a>
+        </li>
+        
+ <li title="characters">
+     <a href="#" class="menu-button characters"></a>
+        </li>
+        
+ <li title="gallery">
+     <a href="#" class="menu-button gallery"></a>
+        </li>
+        
+ <li title="video">
+     <a href="#" class="menu-button video"></a>
+        </li>
+        
+ <li title="trivia">
+     <a href="#" class="menu-button trivia"></a>
+        </li>
+
+ <li title="mobile">
+     <a href="#" class="menu-button mobile"></a>
+        </li>	
+		 
+ </ul>
+ <ul class="menu-bar">
+ <li><a href="index.html" class="menu-button home" ></a></li>
+ <li><a href="about.html" class="menu-button about"></a></li>
+ <li><a href="arthur.html" class="menu-button characters"></a></li>
+ <li><a href="gallery.html" class="menu-button gallery"></a></li>
+ <li><a href="video.html" class="menu-button video"></a></li> 
+ <li><a href="trivia.html" class="menu-button trivia"></a></li>
+ <li><a href="#" class="menu-button mobile"></a></li>
+ </ul>
+       
+    </div>
+    </div>
+    
+
+<div id="warning-message">
+   
+</div>
+
+</body>
+ 
+  <script type="text/javascript">
+    $(document).ready(function()
+{
+    $(document).mouseup(function(e)
+    {
+        var subject = $("#menu"); 
+
+        if(e.target.id == subject.attr('id'))
+        {
+            $(".menu").toggleClass( "hide" );
+            $(".menu-bar").toggleClass( "open" );
+        }
+    });
+});
+    $(document).ready(function(){
+  $(".menu-button").click(function(){
+   $(".menu-bar").toggleClass( "open" );
+      $(".menu").toggleClass( "hide" );
+      
+    
+      
+  });
+ });
+    
+    $(document).ready(function(){
+    $("#text-mobile").hide();
+    $("#martin-mobile").hide();
+    $("#text-mobile-2").hide();
+        
+    $("#arthur-mobile").on("click",function(){
+        $("#text-mobile").fadeIn(1500);
+        $("#arthur-mobile").hide();
+    });
+    $("#text-mobile").on("click",function(){
+        $("#martin-mobile").fadeIn(1500);
+        $("#text-mobile").hide();
+    });
+     $("#martin-mobile").on("click",function(){
+        $("#text-mobile-2").fadeIn(1500);
+        $("#martin-mobile").hide();
+    });
+     $("#text-mobile-2").on("click",function(){
+        $("#arthur-mobile").fadeIn(1500);
+        $("#text-mobile-2").hide();
+    });
+});
+    
+    
+      </script>  
+  
+</html>

@@ -1,0 +1,1052 @@
+/* ----- CSS RESET ----- */
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+margin: 0;
+padding: 0;
+}
+img, fieldset {
+border: 0;
+}
+/* set image max width to 100% */
+img {
+max-width: 100%;
+height: auto;
+}
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+
+
+@font-face {
+    font-family: 'texgyreherosbold';
+    src: url('texgyreheros-bold-webfont.eot');
+    src: url('texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('texgyreheros-bold-webfont.woff2') format('woff2'),
+         url('texgyreheros-bold-webfont.woff') format('woff'),
+         url('texgyreheros-bold-webfont.ttf') format('truetype'),
+         url('texgyreheros-bold-webfont.svg#texgyreherosbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'texgyreherosbold_italic';
+    src: url('texgyreheros-bolditalic-webfont.eot');
+    src: url('texgyreheros-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('texgyreheros-bolditalic-webfont.woff2') format('woff2'),
+         url('texgyreheros-bolditalic-webfont.woff') format('woff'),
+         url('texgyreheros-bolditalic-webfont.ttf') format('truetype'),
+         url('texgyreheros-bolditalic-webfont.svg#texgyreherosbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'texgyreherositalic';
+    src: url('texgyreheros-italic-webfont.eot');
+    src: url('texgyreheros-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('texgyreheros-italic-webfont.woff2') format('woff2'),
+         url('texgyreheros-italic-webfont.woff') format('woff'),
+         url('texgyreheros-italic-webfont.ttf') format('truetype'),
+         url('texgyreheros-italic-webfont.svg#texgyreherositalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'texgyreherosregular';
+    src: url('texgyreheros-regular-webfont.eot');
+    src: url('texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('texgyreheros-regular-webfont.woff2') format('woff2'),
+         url('texgyreheros-regular-webfont.woff') format('woff'),
+         url('texgyreheros-regular-webfont.ttf') format('truetype'),
+         url('texgyreheros-regular-webfont.svg#texgyreherosregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+ background: url(imagens/1884200.jpg) no-repeat center center fixed;
+background-size: cover;
+}
+
+
+.location {
+ position: fixed;
+    top: 50px;
+    left: 0px;
+    width: 900px;
+    height: 30px;
+    background-image: url(imagens/characters/location-arthur-01.png);
+    background-repeat: no-repeat;
+}
+
+.location:hover { 
+    width: 900px;
+   background-image: url(imagens/characters/location-arthur-hover-01-01.png);
+    background-repeat: no-repeat;
+    left: 0px;
+    background-repeat: no-repeat;
+    
+}
+
+.menu {
+ position: fixed;
+ top: 450px;
+ left: 0;
+ width: 0px;
+ height: 0px;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ z-index:10; 
+ overflow:visible;
+ background-repeat: no-repeat;
+}
+
+.menu-bar {
+ position: fixed;
+ top: 450px;
+ left: 0;
+ width: 305px;
+ height: 200px;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ z-index:10; 
+ overflow:hidden;
+ background-repeat: no-repeat;
+}
+
+
+.menu li a{
+ display: block;
+ text-indent: -500em;
+ height: 30px;
+ width: 41px;
+ position: relative;
+ transition: background 0.1s ease-in-out;
+ background-repeat: no-repeat;
+}
+.menu li a:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+.menu li a.about:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+
+}
+.menu li a.video:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+.menu li a.characters:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+.menu li a.trivia:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+.menu li a.gallery:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+.menu li a.home:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+
+
+
+
+.menu li a:hover,
+.menu-bar li a:hover {
+}
+
+
+.menu li a.home:hover {
+ background-image: url(imagens/menu/menu-escondido-coiso-01.png);
+    background-size: 100%;
+ width: 41px;
+}
+
+.menu li a.about:hover {
+    background-image: url(imagens/menu/menu-escondido-coiso-02.png);
+    background-size: 100%;
+    width: 41px;
+}
+
+.menu li a.video:hover {
+    background-image: url(imagens/menu/menu-escondido-coiso-05.png);
+    background-size: 100%;
+    width: 41px;
+}
+
+.menu li a.characters:hover {
+    background-image: url(imagens/menu/menu-escondido-coiso-03.png);
+    background-size: 100%;
+    width: 41px;
+}
+
+.menu li a.trivia:hover {
+    background-image: url(imagens/menu/menu-escondido-coiso-06.png);
+    background-size: 100%;
+    width: 41px;
+}
+
+.menu li a.gallery:hover {
+    background-image: url(imagens/menu/menu-escondido-coiso-04.png);
+    background-size: 100%;
+    width: 41px;
+}
+
+.home {background-image: url(imagens/menu/menu-escondido-01.png);
+background-size: 31px, 31px;}
+.about {background-image: url(imagens/menu/menu-escondido-02.png);
+background-size: 31px, 31px;}
+.characters {background-image: url(imagens/menu/menu-escondido-03.png);
+background-size: 31px, 31px;}
+.gallery {background-image: url(imagens/menu/menu-escondido-04.png);
+background-size: 31px, 31px;}
+.video {background-image: url(imagens/menu/menu-escondido-05.png);
+background-size: 31px, 31px;}
+.trivia {background-image: url(imagens/menu/menu-escondido-06.png);
+background-size: 31px, 31px;}
+
+.menu-bar{
+ overflow: hidden;
+ left:0px;
+ z-index:5;
+ width:0px;
+ height:30;
+}
+
+.menu-bar li a.home {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-01.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.about {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-02.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.characters {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-03.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.gallery {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-04.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.video {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-05.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.trivia {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-06.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.home:hover {
+ width: 355px;
+ background-image: url(imagens/menu/menu-expandido-hover-01.png);
+ background-repeat: no-repeat;
+ left: -1px;
+}
+
+.menu-bar li a.about:hover {
+ width: 355px;
+ background-image: url(imagens/menu/menu-expandido-hover-02.png);
+ background-repeat: no-repeat;
+ left: -1px;
+}
+
+.menu-bar li a.characters:hover {
+ width: 355px;
+ background-image: url(imagens/menu/menu-expandido-hover-03.png);
+ background-repeat: no-repeat;
+ left: -1px;
+}
+
+.menu-bar li a.gallery:hover {
+ width: 355px;
+ background-image: url(imagens/menu/menu-expandido-hover-04.png);
+ background-repeat: no-repeat;
+ left: -1px;
+}
+
+.menu-bar li a.video:hover {
+ width: 355px;
+ background-image: url(imagens/menu/menu-expandido-hover-05.png);
+ background-repeat: no-repeat;
+ left: -1px;
+}
+
+.menu-bar li a.trivia:hover {
+ width: 355px;
+ background-image: url(imagens/menu/menu-expandido-hover-06.png);
+ background-repeat: no-repeat;
+ left: -1px;
+}
+
+
+.open{
+ width:305px;
+ height:180px;
+ overflow: visible;
+
+}
+
+.hide {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    
+}
+
+#menu {
+    position: absolute;
+    top: 430px;
+    left: 0px;
+    width: 320px;
+    height: 300px;
+    
+}
+
+#links {
+    position: absolute;
+    top: 600px;
+    right: 0px;
+    width: 142px;
+    height: 30px;
+}
+
+.links {
+    position: absolute;
+    top: 600px;
+    right: 0px;
+    width: 160px;
+    height: 30px;
+    background-image: url(imagens/menu/links-fundo.svg);
+    background-repeat: no-repeat;
+}
+
+#amazon {
+    position: absolute;
+    top:4px;
+    right: 100px;
+    width: 25px;
+    height: 25px;
+}
+
+.amazon {
+     position: absolute;
+     height: 25px;
+     background-image: url(imagens/menu/amazon.svg);
+     background-repeat: no-repeat;
+}
+
+.amazon:hover {
+    background-image: url(imagens/menu/amazon-hover.svg);
+}
+
+
+#netflix {
+    position: absolute;
+    top:4px;
+    right: 50px;
+    width: 25px;
+    height: 25px;
+}
+
+.netflix {
+     position: absolute;
+     height: 25px;
+     background-image: url(imagens/menu/netflix.svg);
+     background-repeat: no-repeat;
+}
+
+.netflix:hover {
+    background-image: url(imagens/menu/netflix-hover.svg);
+}
+
+#itunes {
+    position: absolute;
+    top:4px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.itunes {
+     position: absolute;
+     height: 25px;
+     background-image: url(imagens/menu/itunes.svg);
+     background-repeat: no-repeat;
+}
+
+.itunes:hover {
+    background-image: url(imagens/menu/itunes-hover.svg);
+}
+
+#caixa {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 940px;
+    height: 540px;
+    background-image: url(imagens/characters/caixa.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-family: Futura-Medium, 'Josefin Sans';
+    color: #EBEBEB;
+    font-size: 20px;
+    text-align: left;
+    
+}
+
+.text {
+    overflow: hidden;
+    font-family: HelveticaNeue-Light, 'Roboto';
+    font-weight: 100;
+    font-size: 15px;
+    color: #EBEBEB;
+    text-align: justify;
+    
+}
+
+ul.img-list {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  text-align: justify;
+}
+ 
+ul.img-list li.arthur {
+  display: inline-block;
+  height: 540px;
+  margin: 0 1em 1em 0;
+  position: absolute;
+    top: 0px;
+    left:0px;
+  width: 470px;
+}
+
+ul.img-list li.martin {
+  display: inline-block;
+  height: 540px;
+  margin: 0 1em 1em 0;
+  position: absolute;
+    top: 0px;
+    left:470px;
+  width: 470px;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 540px;
+  position: absolute;
+  top: 0;
+  width: 470px;
+}
+ 
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 540px;
+  position: absolute;
+  top: 0;
+  width: 470px;
+  opacity: 0;
+}
+ 
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 540px;
+  left: 0px;
+    right: 0px;
+  position: absolute;
+  top: 0;
+  width: 470px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.nav-direita {
+    position: absolute;
+    top: 370px;
+    right: 100px;
+    background-repeat: no-repeat;
+}
+
+.nav-direita:hover {
+    background-image: url(imagens/characters/nav-direita-hover-01-01.svg);
+    background-repeat: no-repeat;
+}
+
+.nav-esquerda {
+    position: absolute;
+    top: 370px;
+    left: 70px;
+    background-repeat: no-repeat;
+}
+.nav-esquerda:hover {
+    background-image: url(imagens/characters/nav-esquerda-hover-01-01.svg);
+    background-repeat: no-repeat;
+}
+
+#text-mobile {
+   opacity: 0;
+}
+
+#text-mobile-2 {
+    opacity: 0;
+}
+
+
+.nav-direita-mobile {
+ display: none;
+}
+
+.nav-esquerda-mobile {
+ display: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 500px){
+#text-mobile {
+display: none;
+}
+}
+
+@media screen and (max-width: 700px){
+ 
+    
+   body {
+ background: url(imagens/1Eq7Y2.png);  
+background-size: 120%;
+
+} 
+  
+body {
+    text-align: center;
+}
+    
+    .location {
+        display: none;
+    }
+    
+    
+    .menu {
+ position: absolute;
+ top: 35%;
+ left: 0;
+ width: 0px;
+ height: 0px;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ z-index:10; 
+ overflow:visible;
+ background-repeat: no-repeat;
+}
+
+.menu-bar {
+ position: absolute;
+ top: 35%;
+ left: 0;
+ width: 305px;
+ height: 200px;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ z-index:10; 
+ overflow:hidden;
+ background-repeat: no-repeat;
+}
+  
+    
+    
+    .menu li a{
+ display: block;
+ text-indent: -500em;
+ height: 30px;
+ width: 41px;
+ position: relative;
+ transition: background 0.1s ease-in-out;
+ background-repeat: no-repeat;
+}
+.menu li a:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+.menu li a.about:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+
+}
+.menu li a.video:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+.menu li a.characters:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+.menu li a.trivia:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+.menu li a.gallery:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+.menu li a.home:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu li a.mobile:before {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+
+   .menu li a:hover,
+.menu-bar li a:hover {
+}
+
+
+.menu li a.home:hover {
+background-image: none;
+}
+
+.menu li a.about:hover {
+ background-image: none;
+}
+
+.menu li a.video:hover {
+    background-image: none;
+}
+
+.menu li a.characters:hover {
+   background-image: none;
+}
+
+.menu li a.trivia:hover {
+   background-image: none;
+}
+
+.menu li a.gallery:hover {
+    background-image: none;
+}
+
+.menu li a.mobile:hover {
+    background-image: url(imagens/menu/menu-escondido-mobile.png);
+}
+    
+.home {background-image: none;}
+.about {background-image: none;}
+.characters {background-image: none;}
+.gallery {background-image: none;}
+.video {background-image: none;}
+.trivia {background-image: none;}
+.mobile {background-image: url(imagens/menu/menu-escondido-mobile.png);
+background-size: 31px, 31px;}
+
+.menu-bar{
+ overflow: hidden;
+ left:0px;
+ z-index:5;
+ width:0px;
+ height:30;
+}
+
+.menu-bar li a.home {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-01.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.about {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-02.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.characters {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-03.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.gallery {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-04.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.video {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-05.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.trivia {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url('imagens/menu/menu-expandido-06.png');
+    background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.menu-bar li a.mobile {
+ display: block; 
+ overflow: hidden;
+ position: relative;
+ height: 30px;
+ width: 305px;
+ background-image: url(imagens/menu/menu-expandido-mobile.png);
+background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.open{
+ width:305px;
+ height:180px;
+ overflow: visible;
+
+}
+
+.hide {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    
+}
+
+#menu {
+    position: absolute;
+    top: 15%;
+    left: 0px;
+    width: 100px;
+    height: 300px;
+    
+}
+    
+    
+  
+
+#caixa {
+    display:none;
+}
+
+.nav-direita {
+    display:none;
+}
+
+.nav-direita:hover {
+    display:none;
+}
+
+.nav-esquerda {
+display:none;
+}
+
+.nav-esquerda:hover {
+  display:none;
+}
+
+#caixa-mobile  {
+  position:absolute;
+  display: block;
+   top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 230px;
+    height: 230px;
+   background-image: url(imagens/about/caixa-mobile.png);
+   background-repeat: repeat;
+   }
+
+#arthur-mobile{
+  position:absolute;
+  display: block;
+   background-image: url(imagens/characters/arthur-mobile.png);
+   background-size:contain;
+    background-position: bottom;
+   background-repeat: no-repeat;
+    height: 100%;
+   width:100%;
+}
+    #martin-mobile{
+  position:absolute;
+  display: block;
+   background-image: url(imagens/characters/martin-mobile.png);
+   background-size:contain;
+    background-position: bottom;
+   background-repeat: no-repeat;
+    height: 100%;
+   width:100%;
+}
+
+    
+    #text-mobile {
+    position: absolute;
+    width: 93%;
+    height: 90%;
+    display: block;
+    font-family: HelveticaNeue-Light, 'texgyreherosregular';
+    font-weight: 100;
+    font-size: 14px;
+    color: #EBEBEB;
+    text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+        overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+        z-index: -5px;
+        opacity: 1;
+    }
+    
+    #text-mobile-2 {
+    position: absolute;
+    width: 93%;
+    height: 90%;
+    display: block;
+    font-family: HelveticaNeue-Light, 'texgyreherosregular';
+    font-weight: normal;
+    font-size: 14px;
+    color: #EBEBEB;
+    text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+        overflow: scroll;
+    o-webkit-overflow-scrolling: touch;
+        z-index: -5px;
+        opacity: 1;
+    }
+    
+    
+    #nav-direita-mobile {
+        display: block;
+    position: absolute;
+    top: 47%;
+     left: 87%;
+        height: 30px;
+        width: 30px;
+    background-repeat: no-repeat;
+        background-image: url(imagens/characters/nav-mobile.png);
+        background-size: contain;
+}
+
+
+
+
+    
+    #links {
+   display: none;
+}
+
+ 
+    @media screen and (orientation:landscape){
+        #wrapper { display:none; }
+        #warning-message { display:block;
+            
+         position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 100px;
+        content: url(imagens/landscape.png);
+            
+        }
+    
+        
+        @media only screen and (orientation:portrait){
+        #warning-message { display:none; }
+        
+    
+    }
+    
+}
+    
+}
+  

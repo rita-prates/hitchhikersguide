@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>The Hitchhiker's Guide to the Galaxy</title>
+ <link rel="stylesheet" href="guide.css">
+ <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+ <script src="jquery/jquery-1.10.2.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui"> 
+</head>
+<body>
+    
+    <div id="wrapper">
+    
+   <div id="caixa">
+    <ul class="img-list">
+  <li class="guide">
+    <a href="#">
+      <img src="imagens/characters/guide.png" width="470" height="540" />
+      <span class="text-content"><span>
+          <p class="title">The Hitchhiker's Guide to the Galaxy</p>
+          <br></br>
+          <p class="text">According to the Guide itself, ‘The Hitchhiker's Guide to the Galaxy is a wholly remarkable book - perhaps the most remarkable, certainly the most successful book ever to come out of the great publishing corporations of Ursa Minor.’  Its success comes mainly from the fact that it has the words DON’T PANIC printed in large friendly letters on its cover. Throughout the movie, the Guide contributes with useful information, serving partly as a narrator.
+</p>
+          </span></span>
+    </a>
+  </li>
+    
+    <li class="stephen">
+    <a href="#">
+      <img src="imagens/characters/stephen.png" width="470" height="540" />
+      <span class="text-content"><span>
+          <p class="title">Stephen Fry</p>
+          <br></br>
+          <p class="text">Stephen Fry, born in England in 1957, is known for his work as an actor, presenter, writer and as part of the comedic duo Fry and Laurie, with Hugh Laurie. 
+His most notable acting work includes roles in the TV Shows Blackadder, Kingdom and Bones, as well as in films such as Wilde, V for Vendetta, Tim Burton’s Alice in Wonderland and a participation in two films of The Hobbit trilogy.</p>
+          </span></span>
+    </a>
+  </li>
+</ul>
+    
+    
+    </div>
+
+<div id="caixa-mobile">
+    <div id="guide-mobile"></div>
+<div id="text-mobile">  
+     The Hitchhiker's Guide to the Galaxy<br></br>
+   According to the Guide itself, ‘The Hitchhiker's Guide to the Galaxy is a wholly remarkable book - perhaps the most remarkable, certainly the most successful book ever to come out of the great publishing corporations of Ursa Minor.’  Its success comes mainly from the fact that it has the words DON’T PANIC printed in large friendly letters on its cover. Throughout the movie, the Guide contributes with useful information, serving partly as a narrator.
+    </div>
+
+<div id="stephen-mobile">´</div>
+	
+ <div id="text-mobile-2">  
+    Stephen Fry<br></br>
+   Stephen Fry, born in England in 1957, is known for his work as an actor, presenter, writer and as part of the comedic duo Fry and Laurie, with Hugh Laurie. 
+His most notable acting work includes roles in the TV Shows Blackadder, Kingdom and Bones, as well as in films such as Wilde, V for Vendetta, Tim Burton’s Alice in Wonderland and a participation in two films of The Hobbit trilogy
+    </div>
+
+
+</div>
+
+
+<a href="arthur.html" class="nav-direita">
+    <img src="imagens/characters/nav-direita-01.svg"/>
+</a>    
+
+<a href="marvin.html" class="nav-esquerda">
+    <img src="imagens/characters/nav-esquerda-01.svg"/>
+</a>  
+    
+<a href="guide.html" class="location"></a>
+    
+    
+ <div id="links" class="links">
+ <a href="http://www.amazon.com/Hitchhikers-Guide-Galaxy-Sam-Rockwell/dp/B003QSJVGW/ref=tmm_aiv_swatch_0?_encoding=UTF8&sr=&qid=" title="Amazon Prime" id="amazon" class="amazon" target="_blank">
+</a>
+
+<a href="http://dvd.netflix.com/Movie/The-Hitchhiker-s-Guide-to-the-Galaxy/70021632" title="Netflix" id="netflix" class="netflix" target="_blank">
+</a>
+
+<a href="http://itunes.apple.com/us/movie/hitchhikers-guide-to-the-galaxy/id188702833" title="iTunes" id="itunes" class="itunes" target="_blank">
+</a>
+    
+    </div>
+    
+ <a href="arthur.html">
+    <div id="nav-direita-mobile"></div>
+</a>    
+
+
+
+    <div id="menu"><ul class="menu">
+        
+   <li title="menu"> 
+       <a href="#" class="menu-button home"></a>
+        </li>
+        
+ <li title="about">
+     <a href="#" class="menu-button about"></a>
+        </li>
+        
+ <li title="characters">
+     <a href="#" class="menu-button characters"></a>
+        </li>
+        
+ <li title="gallery">
+     <a href="#" class="menu-button gallery"></a>
+        </li>
+        
+ <li title="video">
+     <a href="#" class="menu-button video"></a>
+        </li>
+        
+ <li title="trivia">
+     <a href="#" class="menu-button trivia"></a>
+        </li>
+
+ <li title="mobile">
+     <a href="#" class="menu-button mobile"></a>
+        </li>	
+		 
+ </ul>
+ <ul class="menu-bar">
+ <li><a href="index.html" class="menu-button home" ></a></li>
+ <li><a href="about.html" class="menu-button about"></a></li>
+ <li><a href="arthur.html" class="menu-button characters"></a></li>
+ <li><a href="gallery.html" class="menu-button gallery"></a></li>
+ <li><a href="video.html" class="menu-button video"></a></li> 
+ <li><a href="trivia.html" class="menu-button trivia"></a></li>
+ <li><a href="#" class="menu-button mobile"></a></li>
+ </ul>
+       
+    </div>
+    
+
+    </div>
+    
+
+<div id="warning-message">
+   
+</div>
+</body>
+ 
+  <script type="text/javascript">
+    $(document).ready(function()
+{
+    $(document).mouseup(function(e)
+    {
+        var subject = $("#menu"); 
+
+        if(e.target.id == subject.attr('id'))
+        {
+            $(".menu").toggleClass( "hide" );
+            $(".menu-bar").toggleClass( "open" );
+        }
+    });
+});
+    $(document).ready(function(){
+  $(".menu-button").click(function(){
+   $(".menu-bar").toggleClass( "open" );
+      $(".menu").toggleClass( "hide" );
+      
+    
+      
+  });
+ });
+      
+      $(document).ready(function(){
+    $("#text-mobile").hide();
+    $("#stephen-mobile").hide();
+    $("#text-mobile-2").hide();
+        
+    $("#guide-mobile").on("click",function(){
+        $("#text-mobile").fadeIn(1500);
+        $("#guide-mobile").hide();
+    });
+    $("#text-mobile").on("click",function(){
+        $("#stephen-mobile").fadeIn(1500);
+        $("#text-mobile").hide();
+    });
+     $("#stephen-mobile").on("click",function(){
+        $("#text-mobile-2").fadeIn(1500);
+        $("#stephen-mobile").hide();
+    });
+     $("#text-mobile-2").on("click",function(){
+        $("#guide-mobile").fadeIn(1500);
+        $("#text-mobile-2").hide();
+    });
+});
+      
+      </script> 
+  
+</html>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>The Hitchhiker's Guide to the Galaxy</title>
+ <link rel="stylesheet" href="ford.css">
+ <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+ <script src="jquery/jquery-1.10.2.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui"> 
+</head>
+<body>
+    
+    <div id="wrapper">
+    
+   <div id="caixa">
+    <ul class="img-list">
+  <li class="ford">
+    <a href="#">
+      <img src="imagens/characters/ford.png" width="470" height="540" />
+      <span class="text-content"><span>
+          <p class="title">Ford Prefect</p>
+          <br></br>
+          <p class="text">Born in Betelgeuse, Ford Prefect is a researcher for the Hitchhiker’s Guide to the Galaxy who has been stranded on Earth for fifteen years, posing as a human. He befriends Arthur Dent and eventually saves him when the Earth is demolished. Being a researcher for the Guide, Ford himself serves as a guide to the universe for the bewildered Arthur.
+</p>
+          </span></span>
+    </a>
+  </li>
+    
+    <li class="mos">
+    <a href="#">
+      <img src="imagens/characters/mos.png" width="470" height="540" />
+      <span class="text-content"><span>
+          <p class="title">Mos Def</p>
+          <br></br>
+          <p class="text">Yasiin Bey (birth name Dante Smith), also known by his stage name Mos Def, is an American actor and hip hop musician born in 1973 in Brooklyn, New York. He his well known for his roles in films like 16 Blocks, The Italian Job, Brown Sugar and Be Kind Rewind, and for his role in the TV Show Dexter.</p>
+          </span></span>
+    </a>
+  </li>
+</ul>
+    
+    
+    </div>
+
+<div id="caixa-mobile">
+    <div id="ford-mobile"></div>
+<div id="text-mobile">  
+     Ford Prefect<br></br>
+    Born in Betelgeuse, Ford Prefect is a researcher for the Hitchhiker’s Guide to the Galaxy who has been stranded on Earth for fifteen years, posing as a human. He befriends Arthur Dent and eventually saves him when the Earth is demolished. Being a researcher for the Guide, Ford himself serves as a guide to the universe for the bewildered Arthur.
+    </div>
+
+<div id="mos-mobile">´</div>
+	
+ <div id="text-mobile-2">  
+     Mos Def<br></br>
+    Yasiin Bey (birth name Dante Smith), also known by his stage name Mos Def, is an American actor and hip hop musician born in 1973 in Brooklyn, New York. He his well known for his roles in films like 16 Blocks, The Italian Job, Brown Sugar and Be Kind Rewind, and for his role in the TV Show Dexter.
+    </div>
+
+
+</div>
+
+     
+     
+    </div>
+
+<a href="zaphod.html" class="nav-direita">
+    <img src="imagens/characters/nav-direita-01.svg"/>
+</a>    
+
+<a href="trillian.html" class="nav-esquerda">
+    <img src="imagens/characters/nav-esquerda-01.svg"/>
+</a>  
+    
+<a href="ford.html" class="location"></a>
+    
+    
+ <div id="links" class="links">
+ <a href="http://www.amazon.com/Hitchhikers-Guide-Galaxy-Sam-Rockwell/dp/B003QSJVGW/ref=tmm_aiv_swatch_0?_encoding=UTF8&sr=&qid=" title="Amazon Prime" id="amazon" class="amazon" target="_blank">
+</a>
+
+<a href="http://dvd.netflix.com/Movie/The-Hitchhiker-s-Guide-to-the-Galaxy/70021632" title="Netflix" id="netflix" class="netflix" target="_blank">
+</a>
+
+<a href="http://itunes.apple.com/us/movie/hitchhikers-guide-to-the-galaxy/id188702833" title="iTunes" id="itunes" class="itunes" target="_blank">
+</a>
+    
+    </div>
+
+ <a href="zaphod.html">
+    <div id="nav-direita-mobile"></div>
+</a>    
+
+
+    
+    <div id="menu"><ul class="menu">
+        
+   <li title="menu"> 
+       <a href="#" class="menu-button home"></a>
+        </li>
+        
+ <li title="about">
+     <a href="#" class="menu-button about"></a>
+        </li>
+        
+ <li title="characters">
+     <a href="#" class="menu-button characters"></a>
+        </li>
+        
+ <li title="gallery">
+     <a href="#" class="menu-button gallery"></a>
+        </li>
+        
+ <li title="video">
+     <a href="#" class="menu-button video"></a>
+        </li>
+        
+ <li title="trivia">
+     <a href="#" class="menu-button trivia"></a>
+        </li>
+        
+        <li title="mobile">
+     <a href="#" class="menu-button mobile"></a>
+        </li>
+ </ul>
+ <ul class="menu-bar">
+ <li><a href="index.html" class="menu-button home" ></a></li>
+ <li><a href="about.html" class="menu-button about"></a></li>
+ <li><a href="arthur.html" class="menu-button characters"></a></li>
+ <li><a href="gallery.html" class="menu-button gallery"></a></li>
+ <li><a href="video.html" class="menu-button video"></a></li> 
+ <li><a href="trivia.html" class="menu-button trivia"></a></li>
+     <li><a href="#" class="menu-button mobile"></a></li>
+ </ul>
+       
+    </div>
+    
+    </div>
+    
+
+<div id="warning-message">
+   
+</div>
+    
+</body>
+ 
+   <script type="text/javascript">
+    $(document).ready(function()
+{
+    $(document).mouseup(function(e)
+    {
+        var subject = $("#menu"); 
+
+        if(e.target.id == subject.attr('id'))
+        {
+            $(".menu").toggleClass( "hide" );
+            $(".menu-bar").toggleClass( "open" );
+        }
+    });
+});
+    $(document).ready(function(){
+  $(".menu-button").click(function(){
+   $(".menu-bar").toggleClass( "open" );
+      $(".menu").toggleClass( "hide" );
+      
+    
+      
+  });
+ });
+      
+      $(document).ready(function(){
+    $("#text-mobile").hide();
+    $("#mos-mobile").hide();
+    $("#text-mobile-2").hide();
+        
+    $("#ford-mobile").on("click",function(){
+        $("#text-mobile").fadeIn(1500);
+        $("#ford-mobile").hide();
+    });
+    $("#text-mobile").on("click",function(){
+        $("#mos-mobile").fadeIn(1500);
+        $("#text-mobile").hide();
+    });
+     $("#mos-mobile").on("click",function(){
+        $("#text-mobile-2").fadeIn(1500);
+        $("#mos-mobile").hide();
+    });
+     $("#text-mobile-2").on("click",function(){
+        $("#ford-mobile").fadeIn(1500);
+        $("#text-mobile-2").hide();
+    });
+});
+      
+      </script> 
+  
+</html>
